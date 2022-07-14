@@ -1,3 +1,50 @@
-body {
-    background-color: whitesmoke;
+div {
+    border: 1px solid;
+    border-color: red;
 }
+
+.empty-space {
+    visibility: hidden;
+}
+
+.container {
+    margin-top: 2%;
+    height: 100vh;
+}
+
+#buttons {
+    list-style: none;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.sidebar-element {
+    background-color: white;
+    border: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 45px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+.sidebar-element:hover {
+    background-color: rgb(216, 216, 216);
+}
+.buttons {
+    
+}
+
+.icon {
+    background: none;
+    border: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 45px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
