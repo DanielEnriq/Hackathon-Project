@@ -116,3 +116,34 @@
     position:sticky ;
     top: 0px;
 }
+
+
+
+
+#login-img-div{
+    background-color:aqua;
+    height: 965px;
+    width : 40%;
+}
+
+#login-img{
+    display:block;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    max-height: 100%;
+    max-width: 100%;
+
+}
+
+#login-details {
+    height: 965px;
+    float:left;
+    width:50%
+}
+
+#mini-login-img { 
+    width:50%;
+}
