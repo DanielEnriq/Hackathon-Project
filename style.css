@@ -107,3 +107,8 @@
     height: 20px;
     
 }
+
+.post-nav {
+    background-color: white;
+    opacity: 80%;
+}
