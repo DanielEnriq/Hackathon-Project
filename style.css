@@ -111,4 +111,8 @@
 .post-nav {
     background-color: white;
     opacity: 80%;
+    height: 40px;
+    line-height: 40px;
+    position:sticky ;
+    top: 0px;
 }
