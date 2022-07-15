@@ -1,16 +1,15 @@
-div {
-    border: 1px solid;
-    border-color: red;
-}
+
 
 .empty-space {
     visibility: hidden;
 }
 
 .container {
-    margin-top: 2%;
-    height: 100vh;
+    height: 100%;
+    display: flex;
 }
+
+
 
 #buttons {
     list-style: none;
@@ -18,24 +17,74 @@ div {
 
 #logo {
     width: 150px;
-    height: 150px;
+    height: 120px;
     object-fit: cover;
+    border-radius: 50%;
+    transition: all 0.3s;
+    cursor: pointer;
 }
 
+#logo:hover {
+    opacity: 50%;
+}
+
+#pfp {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  
+
+}
+
+.sidebar {
+    
+    padding-left: 45px;
+    position: sticky;
+    top: 10px;
+
+}
+
+
+.account-container {
+    
+    background-color: white;
+    padding-left: 10px;
+    padding-top: 11px;
+    height: 60px;
+    width: 240px;
+    border-radius: 30px;
+    transition: all 0.3s;
+    margin-top: 40vh;
+}
+
+
 .sidebar-element {
+    font-size: larger;
     background-color: white;
     border: none;
     padding-right: 10px;
     padding-left: 10px;
-    height: 45px;
+    height: 50px;
     border-radius: 30px;
     transition: all 0.3s;
 }
+
 .sidebar-element:hover {
     background-color: rgb(216, 216, 216);
+    cursor: pointer;
 }
-.buttons {
-    
+
+.account-container:hover {
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+}
+
+
+.sidebar-logos {
+    object-fit: cover;
+    height: 20px;
+    width: 20px;
 }
 
 .icon {
@@ -48,3 +97,13 @@ div {
     transition: all 0.3s;
 }
 
+.username-el {
+    display: inline-block;
+    font-size: 10px;
+}
+
+#account-dots {
+    object-fit: scale-down;
+    height: 20px;
+    
+}
