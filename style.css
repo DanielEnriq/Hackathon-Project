@@ -1,7 +1,3 @@
-div {
-    /* border: 1px solid; */
-    /* border-color: red; */
-}
 
 .empty-space {
     visibility: hidden;
@@ -33,9 +29,6 @@ div {
 }
 .sidebar-element:hover {
     background-color: rgb(216, 216, 216);
-}
-.buttons {
-    
 }
 
 .icon {
