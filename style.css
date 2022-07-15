@@ -116,3 +116,9 @@
     position:sticky ;
     top: 0px;
 }
+
+.bark-container {
+    height: 181px;
+    border: 1px solid;
+    border-color: lightgray;
+}
