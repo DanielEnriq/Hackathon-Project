@@ -1,4 +1,5 @@
 
+
 .empty-space {
     visibility: hidden;
 }
@@ -57,7 +58,7 @@ div.recommended-barks , div.recommended-barkers {
     border-radius:30px;
 }
 
-div.recommended-barks a , div.recommended-barkers a {
+div.recommended-barks a , div.recommended-barkers {
     text-decoration:none;
     font-size:0.8em;
 }
