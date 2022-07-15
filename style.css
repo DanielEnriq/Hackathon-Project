@@ -58,7 +58,7 @@ div.recommended-barks , div.recommended-barkers {
     border-radius:30px;
 }
 
-div.recommended-barks a , div.recommended-barkers {
+div.recommended-barks a , div.recommended-barkers a {
     text-decoration:none;
     font-size:0.8em;
 }
