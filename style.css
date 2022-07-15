@@ -5,11 +5,9 @@
 }
 
 .container {
-    height: 100%;
-    display: flex;
+    margin-top: 2%;
+    height: 100vh;
 }
-
-
 
 #buttons {
     list-style: none;
@@ -17,74 +15,21 @@
 
 #logo {
     width: 150px;
-    height: 120px;
+    height: 150px;
     object-fit: cover;
-    border-radius: 50%;
-    transition: all 0.3s;
-    cursor: pointer;
 }
-
-#logo:hover {
-    opacity: 50%;
-}
-
-#pfp {
-    padding: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  
-
-}
-
-.sidebar {
-    
-    padding-left: 45px;
-    position: sticky;
-    top: 10px;
-
-}
-
-
-.account-container {
-    
-    background-color: white;
-    padding-left: 10px;
-    padding-top: 11px;
-    height: 60px;
-    width: 240px;
-    border-radius: 30px;
-    transition: all 0.3s;
-    margin-top: 40vh;
-}
-
 
 .sidebar-element {
-    font-size: larger;
     background-color: white;
     border: none;
     padding-right: 10px;
     padding-left: 10px;
-    height: 50px;
+    height: 45px;
     border-radius: 30px;
     transition: all 0.3s;
 }
-
 .sidebar-element:hover {
     background-color: rgb(216, 216, 216);
-    cursor: pointer;
-}
-
-.account-container:hover {
-    background-color: rgb(216, 216, 216);
-    cursor: pointer;
-}
-
-
-.sidebar-logos {
-    object-fit: cover;
-    height: 20px;
-    width: 20px;
 }
 
 .icon {
@@ -97,10 +42,54 @@
     transition: all 0.3s;
 }
 
-.username-el {
-    display: inline-block;
-    font-size: 10px;
+input.form-control {
+    border-radius:30px;
 }
+
+input.form-control.search {
+    background-image:url(images/searchicon.png);
+    background-repeat:no-repeat;
+    background-position:6px 6px;
+    padding-left:39px;
+}
+
+div.recommended-barks , div.recommended-barkers {
+    background-color: rgb(216, 216, 216);
+    border-radius:30px;
+}
+
+div.recommended-barks a , div.recommended-barkers a {
+    text-decoration:none;
+    font-size:0.8em;
+}
+
+div.bark , div.barker {
+    margin-top:25px;
+
+}
+
+div.bark div.barked-by {
+    font-size:0.70em;
+}
+
+div.bark div.bark-title , div.barker div.barker-name {
+    font-weight:bold;
+}
+
+
+div.bark div.rebarks , div.barker div.bark-at {
+    font-size:0.70em;
+}
+
+div.bark img {
+    width:100%;
+    border-radius:15px;
+}
+
+div.barker img {
+    width: 50px;
+    height: 50px;
+    border-radius:25px;
 
 #account-dots {
     object-fit: scale-down;
@@ -115,4 +104,5 @@
     line-height: 40px;
     position:sticky ;
     top: 0px;
+
 }
