@@ -1,4 +1,98 @@
-body {
-    background-color: whitesmoke;
+div {
+    /* border: 1px solid; */
+    /* border-color: red; */
 }
 
+.empty-space {
+    visibility: hidden;
+}
+
+.container {
+    margin-top: 2%;
+    height: 100vh;
+}
+
+#buttons {
+    list-style: none;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.sidebar-element {
+    background-color: white;
+    border: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 45px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+.sidebar-element:hover {
+    background-color: rgb(216, 216, 216);
+}
+.buttons {
+    
+}
+
+.icon {
+    background: none;
+    border: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 45px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+input.form-control {
+    border-radius:30px;
+}
+
+input.form-control.search {
+    background-image:url(images/searchicon.png);
+    background-repeat:no-repeat;
+    background-position:6px 6px;
+    padding-left:39px;
+}
+
+div.recommended-barks , div.recommended-barkers {
+    background-color: rgb(216, 216, 216);
+    border-radius:30px;
+}
+
+div.recommended-barks a , div.recommended-barkers a {
+    text-decoration:none;
+    font-size:0.8em;
+}
+
+div.bark , div.barker {
+    margin-top:25px;
+
+}
+
+div.bark div.barked-by {
+    font-size:0.70em;
+}
+
+div.bark div.bark-title , div.barker div.barker-name {
+    font-weight:bold;
+}
+
+div.bark div.rebarks , div.barker div.bark-at {
+    font-size:0.70em;
+}
+
+div.bark img {
+    width:100%;
+    border-radius:15px;
+}
+
+div.barker img {
+    width: 50px;
+    height: 50px;
+    border-radius:25px;
+}

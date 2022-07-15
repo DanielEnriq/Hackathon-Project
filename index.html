@@ -1,12 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time to Collaborate</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="row ">
+            <!-- empty space -->
+            <!-- <div class="col-1 empty-space">col-1 </div> -->
+            <!-- left Side/Navbar -->
+            <div class="col-3">
+                <section class="top-container">
+                    <ul id="buttons">
+                        <img src="logos/logo.png" alt="dog photo" id="logo">
+                        <li class="sidebar-element"><img src="pawprint.png" alt=""><button class="icon">Home</button></li>
+                        <li class="sidebar-element"><button class="icon">Explore</button></li>
+                        <li class="sidebar-element"><button class="icon">Notifications</button></li>
+                        <li class="sidebar-element"><button class="icon">Messages</button></li>
+                        <li class="sidebar-element"><button class="icon">Bookmarks</button></li>
+                        <li class="sidebar-element"><button class="icon">Lists</button></li>
+                        <li class="sidebar-element"><button class="icon">Profile</button></li>
+                        <li class="sidebar-element"><button class="icon">More</button></li>
+
+                    </ul>
+                </section>
+
+                <section class="bottom">
+                    
+                </section>
+            </div>
+            <!-- Posts -->
+            <div class="col-5">col-4</div>
+            <!--  -->
+            <div class="col-4">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control search" placeholder="Search Barker"/> 
+                            <span class="glyphicon glyphicon-search"></span>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="recommended-barks p-3">
+                                <h5>What's happening</h5>
+                                <div class="row bark">
+                                    <div class="col-8">
+                                        <div class="barked-by">dogsrcool</div>
+                                        <div class="bark-title">I'm the cutest dog ever</div>
+                                        <div class="rebarks">rebarked by: cutedogz100</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_3x2.jpg" />
+                                    </div>
+                                </div>
+                                <div class="row bark">
+                                    <div class="col-8">
+                                        <div class="barked-by">dogzrool</div>
+                                        <div class="bark-title">My owner loves me</div>
+                                        <div class="rebarks">rebarked by: catzdrool</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/HB4AT3D3IMI6TMPTWIZ74WAR54.jpg&w=1200" />
+                                    </div>
+                                </div>
+                                <div class="row bark">
+                                    <div class="col-8">
+                                        <div class="barked-by">bigchi</div>
+                                        <div class="bark-title">Just got my hair done</div>
+                                        <div class="rebarks">rebarked by: dogsrcool</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="https://pbs.twimg.com/profile_images/271796316/chihuahua-toupee_400x400.jpg" />
+                                    </div>
+                                </div>
+                                <div class="row bark">
+                                    <div class="col-8">
+                                        <div class="barked-by">everybark-dywantstodrooltheworld</div>
+                                        <div class="bark-title">#Mondaysmakemecrazy</div>
+                                        <div class="rebarks">rebarked by: puglife</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="http://cdn.akc.org/content/article-body-image/funny-basset_hound_yawning.jpg" />
+                                    </div>
+                                </div>
+                                <div class="row bark">
+                                    <div class="col-8">
+                                        <div class="barked-by">puglife</div>
+                                        <div class="bark-title">Loving my Life </div>
+                                        <div class="rebarks">rebarked by: gangstadogz</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="https://www.ardeaprints.com/p/172/dog-black-pug-wearing-gold-chain-baseball-14584314.jpg.webp" />
+                                    </div>
+                                </div> 
+                                <a href="">Show More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="recommended-barkers p-3">
+                                <h5>Who to follow</h5>
+                                <div class="row barker">
+                                    <div class="col-3">
+                                        <img src="images/dogsrcool.jpg"/>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="barker-name">B. Collie</div>
+                                        <div class="bark-at">@dogsrcool</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <button class="btn btn-secondary follow" value="@dogsrcool">Follow</button>
+                                    </div>
+                                </div>
+                                <div class="row barker">
+                                    <div class="col-3">
+                                        <img src="images/puglife.jpg"/>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="barker-name">the Pug</div>
+                                        <div class="bark-at">@puglife</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <button class="btn btn-secondary follow" value="@puglife">Follow</button>
+                                    </div>
+                                </div>
+                                <div class="row barker">
+                                    <div class="col-3">
+                                        <img src="images/catzdrool.jpg"/>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="barker-name">Dogs Only</div>
+                                        <div class="bark-at">@catzdrool</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <button class="btn btn-secondary follow" value="@catzdrool">Follow</button>
+                                    </div>
+                                </div><a href="">Show More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-1 empty-space">col-1 </div> -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
