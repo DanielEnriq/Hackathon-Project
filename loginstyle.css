@@ -5,13 +5,13 @@ body {
 
 .login-container {
     background-color: white;
-    height: 965px;
+
     height: 100%;
 }
 
 #login-div1{
-    height: 965px;
-    background-color:blanchedalmond;
+    
+    background-color: rgb(255,201,201);
 }
 
 #mini-login-img { 
