@@ -1,0 +1,33 @@
+body {
+    overflow: hidden;
+}
+
+
+.login-container {
+    background-color: white;
+    height: 965px;
+    height: 100%;
+}
+
+#login-div1{
+    height: 965px;
+    background-color:blanchedalmond;
+}
+
+#mini-login-img { 
+  height:333.5px;
+  width:187.5px;
+}
+
+#login-text1 {
+    font-weight: bold;
+    font-size:80px;
+}
+
+#login-text2 {
+    font-size: 40px;
+}
+
+.login-form-group {
+    font-size: 20px;
+}

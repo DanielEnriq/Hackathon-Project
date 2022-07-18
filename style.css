@@ -117,35 +117,6 @@
 }
 
 
-
-
-#login-img-div{
-    background-color:aqua;
-    height: 965px;
-    width : 40%;
-}
-
-#login-img{
-    display:block;
-    position: relative;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:auto;
-    margin-bottom:auto;
-    max-height: 100%;
-    max-width: 100%;
-
-}
-
-#login-details {
-    height: 965px;
-    float:left;
-    width:50%
-}
-
-#mini-login-img { 
-    width:50%;
-}
 input.form-control {
     border-radius:30px;
 }
@@ -217,4 +188,29 @@ div.barker img {
     border-color: lightgray;
 }
 
+.login-container {
+    background-color: white;
+    height: 965px;
+    height: 100%;
+}
+
+#login-div1{
+    height: 965px;
+    background-color:blanchedalmond;
+}
+
+#login-div2 {
+    height: 965px;
+
+
+}
+
+#login-img{
+    
+}
+
+#mini-login-img { 
+  height:333.5px;
+  width:187.5px;
+}
 
