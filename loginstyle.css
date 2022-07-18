@@ -1,6 +1,17 @@
+html {
+    font-family: Arial;
+}
+
 body {
     overflow: hidden;
 }
+
+.form-control {
+    border-color: rgb(255,201,201);
+    border-style: dashed;
+    border-width: 2px;
+}
+
 
 
 .login-container {
@@ -28,10 +39,37 @@ body {
     font-size: 40px;
 }
 
-.login-form-group {
-    font-size: 20px;
+#login-form {
+    margin-top: 20px;
+}
+
+#login-form-group1 {
+    margin-top: 20px;
+}
+
+#login-form-group2 {
+    margin-top: 20px
+}
+
+#name-input {
+    margin-top: 20px;
+}
+
+#username-input { 
+    margin-top: 20px;
 }
 
 .button {
-    color: rgb(255,201,201);
+
+    color: white;
+    
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(255, 230, 230);
+    transition: all 0.3s;
+    margin-top: 20px;
 }
+
