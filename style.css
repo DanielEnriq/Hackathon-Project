@@ -233,3 +233,12 @@ div.barker img {
 .bark-button:hover {
     opacity: 80%;
 }
+
+div.bark:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+div.barker:hover {
+    background-color: rgb(226, 226, 226);
+}
+
