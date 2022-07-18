@@ -1,5 +1,6 @@
 $(document).on('click', 'div.barker button.follow', function(e) {
-    console.log($(e.target).val());
+    // console.log($(e.target).val());
+    $(e.target).text("Following");
 });
 
 // from "https://stackoverflow.com/questions/57942695/make-input-height-increase-when-typing"
