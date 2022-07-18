@@ -9,3 +9,10 @@ textArea.addEventListener("input", evt => {
     textArea.style.height = textArea.scrollHeight + "px";
  
 });
+
+
+// PLEASE HELP!!
+// const btn = document.getElementById('div.barker button.follow');
+// btn.addEventListener('click', function handleClick() {
+//   btn.textContent = 'Following';
+// });

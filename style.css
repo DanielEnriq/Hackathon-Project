@@ -47,6 +47,14 @@ html {
 
 }
 
+.container-fluid {
+    
+    padding-right: 45px;
+    position: sticky;
+    top: 10px;
+
+}
+
 
 .account-container {
     
@@ -131,13 +139,12 @@ input.form-control.search {
 }
 
 div.recommended-barks , div.recommended-barkers {
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(236, 236, 236);
     border-radius:30px;
 }
 
 div.recommended-barks a , div.recommended-barkers a {
     text-decoration:none;
-    font-size:0.8em;
 }
 
 div.bark , div.barker {
@@ -233,8 +240,22 @@ div.barker img {
 .bark-button:hover {
     opacity: 80%;
 }
+
+div.bark:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+div.barker:hover {
+    background-color: rgb(216, 216, 216);
+}
+
 .accountsticky {
     position: absolute;
     bottom: -282px;
     left: 0px;
+}
+
+div.bark-title a {
+    color: black;
+    font-size: 0.9em;
 }
