@@ -31,3 +31,7 @@ body {
 .login-form-group {
     font-size: 20px;
 }
+
+.button {
+    color: rgb(255,201,201);
+}
