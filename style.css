@@ -1,9 +1,12 @@
+html {
+    font-family: Arial;
+}
 
 .empty-space {
     visibility: hidden;
 }
 
-.container {
+.container-1 {
     height: 100%;
     display: flex;
 }
@@ -165,6 +168,11 @@ div.barker img {
     height: 50px;
     border-radius:25px;
 }
+
+.container-fluid {
+    margin-top: 20px;
+    position: sticky;
+}
 #account-dots {
     object-fit: scale-down;
     height: 20px;
@@ -183,8 +191,45 @@ div.barker img {
 
 .bark-container {
     height: 181px;
-    border: 1px solid;
+   
     border-color: lightgray;
+    width: 100%;
 }
 
+.textbox-pfp {
+    object-fit: scale-down;
+    width: 45px;
+    background: rgb(255, 197, 197);
+    border: none;
+    border-radius: 50%;
+    margin: 10px;
+}
 
+#input-area {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: 2px solid transparent;
+    outline: none;
+    scrollbar-base-color: transparent;
+    scrollbar-color: transparent;
+    margin-left: -20px;
+    font-size: larger;
+    width: 100%;
+}
+
+.bark-button {
+    color: white;
+    
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 80%;
+    background-color: rgb(255, 230, 230);
+    transition: all 0.3s;
+}
+
+.bark-button:hover {
+    opacity: 80%;
+}
