@@ -12,7 +12,7 @@ textArea.addEventListener("input", evt => {
 
 
 // PLEASE HELP!!
-const btn = document.getElementById('div.barker button.follow');
-btn.addEventListener('click', function handleClick() {
-  btn.textContent = 'Following';
-});
+// const btn = document.getElementById('div.barker button.follow');
+// btn.addEventListener('click', function handleClick() {
+//   btn.textContent = 'Following';
+// });
