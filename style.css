@@ -233,3 +233,8 @@ div.barker img {
 .bark-button:hover {
     opacity: 80%;
 }
+.accountsticky {
+    position: absolute;
+    bottom: -282px;
+    left: 0px;
+}
