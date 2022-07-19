@@ -241,7 +241,6 @@ div.barker img {
 .bark-button:hover {
     opacity: 80%;
 }
-<<<<<<< HEAD
 
 #post-container {
     
@@ -298,10 +297,10 @@ div.barker img {
     opacity: 100%;
     background-color: rgb(255, 201, 201);
     cursor: pointer;
-=======
+}
+
 .accountsticky {
     position: absolute;
     bottom: -282px;
     left: 0px;
->>>>>>> 7d1e187ba0d1f650c8a7056e6dadfa11ea8de76d
 }
