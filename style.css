@@ -2,6 +2,79 @@ html {
     font-family: Arial;
 }
 
+body {
+    overflow: hidden;
+}
+
+.form-control {
+    border-color: rgb(255,201,201);
+    border-style: dashed;
+    border-width: 2px;
+}
+
+
+
+.login-container {
+    background-color: white;
+
+    height: 100%;
+}
+
+#login-div1{  
+    background-color: rgb(255,201,201);
+}
+
+#mini-login-img { 
+  height:333.5px;
+  width:187.5px;
+}
+
+#login-text1 {
+    font-weight: bold;
+    font-size:80px;
+}
+
+#login-text2 {
+    font-size: 40px;
+}
+
+#login-form {
+    margin-top: 20px;
+}
+
+#login-form-group1 {
+    margin-top: 20px;
+}
+
+#login-form-group2 {
+    margin-top: 20px
+}
+
+#name-input {
+    margin-top: 20px;
+}
+
+#username-input { 
+    margin-top: 20px;
+}
+
+.button {
+
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(255, 196, 196);
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: rgb(255, 148, 148);
+}
+
 .empty-space {
     visibility: hidden;
 }
@@ -42,6 +115,14 @@ html {
 .sidebar {
 
     padding-left: 45px;
+    position: sticky;
+    top: 10px;
+
+}
+
+.container-fluid {
+    
+    padding-right: 45px;
     position: sticky;
     top: 10px;
 
@@ -130,16 +211,13 @@ input.form-control.search {
     padding-left: 39px;
 }
 
-div.recommended-barks,
-div.recommended-barkers {
-    background-color: rgb(216, 216, 216);
-    border-radius: 30px;
+div.recommended-barks , div.recommended-barkers {
+    background-color: rgb(236, 236, 236);
+    border-radius:30px;
 }
 
-div.recommended-barks a,
-div.recommended-barkers a {
-    text-decoration: none;
-    font-size: 0.8em;
+div.recommended-barks a , div.recommended-barkers a {
+    text-decoration:none;
 }
 
 div.bark,
@@ -234,7 +312,7 @@ div.barker img {
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 80%;
-    background-color: rgb(255, 201, 201);
+    background-color: rgb(255, 164, 164);
     transition: all 0.3s;
 }
 
@@ -298,9 +376,21 @@ div.barker img {
     background-color: rgb(255, 201, 201);
     cursor: pointer;
 }
+div.bark:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+div.barker:hover {
+    background-color: rgb(216, 216, 216);
+}
 
 .accountsticky {
     position: absolute;
     bottom: -282px;
     left: 0px;
+}
+
+div.bark-title a {
+    color: black;
+    font-size: 0.9em;
 }
