@@ -7,25 +7,33 @@ var USERNAME = "placeholder";
 
 var box = document.getElementById("login-form-group1");
 var submitButton = document.getElementById("submit-button");
-
-window.addEventListener('load', () => {
-    const params = (new URL(document.location)).searchParams;
-
-    NAME = params.get('name-input');
-    USERNAME = params.get('username-input');
-})
+var modal = document.getElementById('barkbark');
 
 barkButton.onclick = function () {
     var inputArea = document.getElementById('input-area');
-    createPost(inputArea.value);
-    textArea.style.height = textArea.style.lineHeight;
-    textArea.value = "";
+    if(inputArea.value != "") {
+        createPost(inputArea.value);
+        textArea.style.height = textArea.style.lineHeight;
+        textArea.value = "";
+    }
+}
+
+submitButton.onclick = function () {
+    tempName = document.getElementById("name-input").value;
+    tempUser = document.getElementById("username-input").value;
+    if (tempName != null && tempUser != null) {
+        NAME = tempName;
+        USERNAME = tempUser;
+        document.getElementById("top-acc").textContent = NAME;
+        document.getElementById("bot-acc").textContent = ("@" + USERNAME);
+        modal.remove();
+    }
 }
 
 
 // from "https://stackoverflow.com/questions/57942695/make-input-height-increase-when-typing"
 // adjusted to fit flow of program
-var textArea = document.getElementById("input-area");
+
 textArea.addEventListener("input", evt => {
     textArea.style.height = textArea.scrollHeight + "px";
 });
@@ -59,7 +67,7 @@ function createPost(textContent) {
     boxName.className = "name";
     boxUser.className = "username";
     boxTime.className = "time";
-    // EDIT THIS LATERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+    
     boxName.textContent = NAME;
     boxUser.textContent = ("@" + USERNAME);
     boxTime.textContent = "7/19/2022";
@@ -92,7 +100,7 @@ function createPost(textContent) {
 
     row.append(rightSide);
     //MODIFIED FROM "https://stackoverflow.com/questions/4687579/append-an-element-with-fade-in-effect-jquery"
-    $(tweetBox).hide().appendTo("#post-container").fadeIn(500);
+    $(tweetBox).hide().appendTo("#post-container").fadeIn(200);
 
     textArea.style.height = textArea.style.lineHeight;
     textArea.value = "";

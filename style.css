@@ -1,10 +1,8 @@
 html {
     font-family: Arial;
+    transition: all 0.3s;
 }
 
-body {
-    overflow: hidden;
-}
 
 .form-control {
     border-color: rgb(255,201,201);
@@ -16,7 +14,7 @@ body {
 
 .login-container {
     background-color: white;
-
+    transition: all 1s;
     height: 100%;
 }
 
@@ -117,7 +115,7 @@ body {
     padding-left: 45px;
     position: sticky;
     top: 10px;
-
+    height: 100vh;
 }
 
 .container-fluid {
@@ -188,7 +186,8 @@ body {
 #account-dots {
     object-fit: scale-down;
     height: 20px;
-
+    margin-top: 25px;
+    margin-left: -10px;
 }
 
 .post-nav {
@@ -308,7 +307,7 @@ div.barker img {
 
     border: none;
     border-radius: 20px;
-    height: 40px;
+    height: 35px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 80%;
@@ -318,11 +317,10 @@ div.barker img {
 
 .bark-button:hover {
     opacity: 80%;
-}
-
-#post-container {
     
 }
+
+
 
 .sample-post {
     border-right:  1px rgb(239, 237, 237) solid;
@@ -385,12 +383,35 @@ div.barker:hover {
 }
 
 .accountsticky {
+    width: 100%;
+    margin-bottom: 5%;
     position: absolute;
-    bottom: -282px;
+    bottom: 0px;
     left: 0px;
+    margin-left: 45px;
+    border-radius: 40px;
+    transition: all 0.3s;
+}
+
+.accountsticky:hover {
+    background-color:rgb(216, 216, 216);
+    cursor: pointer;
 }
 
 div.bark-title a {
     color: black;
     font-size: 0.9em;
+}
+
+.sideCon {
+    height: 100vh;
+}
+
+#top-acc {
+    margin-top: 10px;
+    margin-left: -12px;
+}
+
+#bot-acc {
+    margin-left: -12px;
 }
