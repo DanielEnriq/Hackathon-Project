@@ -250,12 +250,20 @@ div.barker:hover {
 }
 
 .accountsticky {
-    position: absolute;
-    bottom: -282px;
-    left: 0px;
+    position: fixed;
+    bottom: 5px;
+    left: 165px;
 }
 
 div.bark-title a {
     color: black;
     font-size: 0.9em;
+}
+
+div.barker button.follow {
+    font-size: 0.75em;
+}
+
+*.align-right {
+    text-align:right;
 }
