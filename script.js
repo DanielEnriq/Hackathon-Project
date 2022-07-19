@@ -8,7 +8,8 @@ var USERNAME = "placeholder";
 var box = document.getElementById("login-form-group1");
 var submitButton = document.getElementById("submit-button");
 var modal = document.getElementById('barkbark');
-
+var con = document.getElementById('con');
+con.style.display = "none";
 barkButton.onclick = function () {
     var inputArea = document.getElementById('input-area');
     if(inputArea.value != "") {
@@ -27,6 +28,7 @@ submitButton.onclick = function () {
         document.getElementById("top-acc").textContent = NAME;
         document.getElementById("bot-acc").textContent = ("@" + USERNAME);
         modal.remove();
+        con.style.display = "block";
     }
 }
 
