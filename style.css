@@ -1,5 +1,76 @@
 html {
     font-family: Arial;
+    transition: all 0.3s;
+}
+
+
+.form-control {
+    border-color: rgb(255,201,201);
+    border-style: dashed;
+    border-width: 2px;
+}
+
+
+
+.login-container {
+    background-color: white;
+    transition: all 1s;
+    height: 100%;
+}
+
+#login-div1{  
+    background-color: rgb(255,201,201);
+}
+
+#mini-login-img { 
+  height:333.5px;
+  width:187.5px;
+}
+
+#login-text1 {
+    font-weight: bold;
+    font-size:80px;
+}
+
+#login-text2 {
+    font-size: 40px;
+}
+
+#login-form {
+    margin-top: 20px;
+}
+
+#login-form-group1 {
+    margin-top: 20px;
+}
+
+#login-form-group2 {
+    margin-top: 20px
+}
+
+#name-input {
+    margin-top: 20px;
+}
+
+#username-input { 
+    margin-top: 20px;
+}
+
+.button {
+
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(255, 196, 196);
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: rgb(255, 148, 148);
 }
 
 .empty-space {
@@ -35,16 +106,16 @@ html {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-  
+
 
 }
 
 .sidebar {
-    
+
     padding-left: 45px;
     position: sticky;
     top: 10px;
-
+    height: 100vh;
 }
 
 .container-fluid {
@@ -57,7 +128,7 @@ html {
 
 
 .account-container {
-    
+
     background-color: white;
     padding-left: 10px;
     padding-top: 11px;
@@ -115,7 +186,8 @@ html {
 #account-dots {
     object-fit: scale-down;
     height: 20px;
-    
+    margin-top: 25px;
+    margin-left: -10px;
 }
 
 .post-nav {
@@ -123,19 +195,19 @@ html {
     opacity: 80%;
     height: 40px;
     line-height: 40px;
-    position:sticky ;
+    position: sticky;
     top: 0px;
 }
 
 input.form-control {
-    border-radius:30px;
+    border-radius: 30px;
 }
 
 input.form-control.search {
-    background-image:url(images/searchicon.png);
-    background-repeat:no-repeat;
-    background-position:6px 6px;
-    padding-left:39px;
+    background-image: url(images/searchicon.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+    padding-left: 39px;
 }
 
 div.recommended-barks , div.recommended-barkers {
@@ -147,43 +219,47 @@ div.recommended-barks a , div.recommended-barkers a {
     text-decoration:none;
 }
 
-div.bark , div.barker {
-    margin-top:25px;
+div.bark,
+div.barker {
+    margin-top: 25px;
 
 }
 
 div.bark div.barked-by {
-    font-size:0.70em;
+    font-size: 0.70em;
 }
 
-div.bark div.bark-title , div.barker div.barker-name {
-    font-weight:bold;
+div.bark div.bark-title,
+div.barker div.barker-name {
+    font-weight: bold;
 }
 
 
-div.bark div.rebarks , div.barker div.bark-at {
-    font-size:0.70em;
+div.bark div.rebarks,
+div.barker div.bark-at {
+    font-size: 0.70em;
 }
 
 div.bark img {
-    width:100%;
-    border-radius:15px;
+    width: 100%;
+    border-radius: 15px;
 }
 
 div.barker img {
     width: 50px;
     height: 50px;
-    border-radius:25px;
+    border-radius: 25px;
 }
 
 .container-fluid {
     margin-top: 20px;
     position: sticky;
 }
+
 #account-dots {
     object-fit: scale-down;
     height: 20px;
-    
+
 }
 
 .post-nav {
@@ -191,15 +267,15 @@ div.barker img {
     opacity: 80%;
     height: 40px;
     line-height: 40px;
-    position:sticky ;
+    position: sticky;
     top: 0px;
 
 }
 
 .bark-container {
-    height: 181px;
-   
-    border-color: lightgray;
+
+    padding-bottom: 10px;
+    border: 1px rgb(239, 237, 237) solid;
     width: 100%;
 }
 
@@ -210,6 +286,7 @@ div.barker img {
     border: none;
     border-radius: 50%;
     margin: 10px;
+    cursor: pointer;
 }
 
 #input-area {
@@ -222,25 +299,81 @@ div.barker img {
     margin-left: -20px;
     font-size: larger;
     width: 100%;
+    overflow: hidden;
 }
 
-.bark-button {
+#bark-button {
     color: white;
-    
+
     border: none;
     border-radius: 20px;
-    height: 40px;
+    height: 35px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 80%;
-    background-color: rgb(255, 230, 230);
+    background-color: rgb(255, 164, 164);
     transition: all 0.3s;
 }
 
 .bark-button:hover {
     opacity: 80%;
+    
 }
 
+
+
+.sample-post {
+    border-right:  1px rgb(239, 237, 237) solid;
+    border-left:  1px rgb(239, 237, 237) solid;
+    border-bottom:  1px rgb(239, 237, 237) solid;
+    
+    
+}
+
+.left {
+    padding: none;
+}
+
+.right {
+    padding: none;
+    margin-left: -15px;
+    margin-top: 10px;
+}
+
+.name {
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+.username {
+    font-size: 15px;
+    opacity: 75%;
+    margin-left: 6px;
+}
+
+.time {
+    font-size: 15px;
+    opacity: 80%;
+    margin-left: 6px;
+}
+
+.post-img {
+    object-fit: scale-down;
+    height: 40px;
+    margin-right: 12%;
+    padding: 10px;
+    opacity: 70%;
+    border-radius: 45%;
+    transition: all 0.3s;
+}
+
+.post-img:hover {
+    opacity: 100%;
+    background-color: rgb(255, 201, 201);
+    cursor: pointer;
+}
 div.bark:hover {
     background-color: rgb(216, 216, 216);
 }
@@ -250,12 +383,35 @@ div.barker:hover {
 }
 
 .accountsticky {
+    width: 100%;
+    margin-bottom: 5%;
     position: absolute;
-    bottom: -282px;
+    bottom: 0px;
     left: 0px;
+    margin-left: 45px;
+    border-radius: 40px;
+    transition: all 0.3s;
+}
+
+.accountsticky:hover {
+    background-color:rgb(216, 216, 216);
+    cursor: pointer;
 }
 
 div.bark-title a {
     color: black;
     font-size: 0.9em;
+}
+
+.sideCon {
+    height: 100vh;
+}
+
+#top-acc {
+    margin-top: 10px;
+    margin-left: -12px;
+}
+
+#bot-acc {
+    margin-left: -12px;
 }
